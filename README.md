@@ -6,7 +6,7 @@
 
 **日本語帳票OCRの監査可能な正規化・候補抽出ライブラリ**
 
-[English README is available here (README_en.md)](README_en.md) | [設計思想: なぜ曖昧なら直さないか (docs/design_principles.md)](docs/design_principles.md)
+[English README is available here (README_en.md)](https://github.com/IT-Engineer-K/jp-receipt-normalize/blob/main/README_en.md) | [設計思想: なぜ曖昧なら直さないか (docs/design_principles.md)](https://github.com/IT-Engineer-K/jp-receipt-normalize/blob/main/docs/design_principles.md)
 
 ---
 
@@ -187,10 +187,10 @@ mypy src
 - **非目標**: 帳票全体を1回でJSON化するエンドツーエンド製品
 - **非目標**: 「どの日付・どの金額を採用するか」という業務意思決定
 
-詳細は [設計思想ドキュメント (docs/design_principles.md)](docs/design_principles.md) をご覧ください。
+詳細は [設計思想ドキュメント (docs/design_principles.md)](https://github.com/IT-Engineer-K/jp-receipt-normalize/blob/main/docs/design_principles.md) をご覧ください。
 
 ---
 
 ## ライセンス
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/IT-Engineer-K/jp-receipt-normalize/blob/main/LICENSE)

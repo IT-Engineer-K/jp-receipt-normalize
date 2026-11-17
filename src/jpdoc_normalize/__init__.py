@@ -17,7 +17,7 @@ from jpdoc_normalize.models import (
 )
 from jpdoc_normalize.normalizer import normalize_text
 
-__version__ = "0.1.6"
+__version__ = "0.1.7"
 
 __all__ = [
     "normalize_text",

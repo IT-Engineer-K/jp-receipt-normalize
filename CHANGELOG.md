@@ -3,6 +3,11 @@
 All notable changes to `jp-receipt-normalize` will be documented in this file.
 This project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.1.7] - 2026-11-18
+
+### Fixed
+- Updated relative documentation links in `README.md` and `README_en.md` to absolute GitHub URLs so links work on PyPI.
+
 ## [0.1.6] - 2026-11-18
 
 ### Changed

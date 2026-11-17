@@ -6,7 +6,7 @@
 
 **Auditable Normalization and Candidate Extraction for Japanese Document OCR**
 
-[Japanese Documentation (README.md)](README.md) | [Design Principles (docs/design_principles.md)](docs/design_principles.md)
+[Japanese Documentation (README.md)](https://github.com/IT-Engineer-K/jp-receipt-normalize/blob/main/README.md) | [Design Principles (docs/design_principles.md)](https://github.com/IT-Engineer-K/jp-receipt-normalize/blob/main/docs/design_principles.md)
 
 ---
 
@@ -101,4 +101,4 @@ for candidate in registrations:
 
 ## License
 
-[MIT License](LICENSE)
+[MIT License](https://github.com/IT-Engineer-K/jp-receipt-normalize/blob/main/LICENSE)
