@@ -1,0 +1,38 @@
+[
+  {
+    "id": "receipt_convenience_store_01",
+    "description": "Typical convenience store receipt with tax, discount, date, time, phone, registration number, and barcode",
+    "ocr_text": "〇〇マート サンプル店\nTEL: ０３-１２３４-５６７８\n登録番号 T7123456789012\n\n2026年11月15日 17:30\n\nおにぎり　鮭　　　　¥150\n緑茶 500ml　　　　　¥160\n値引　　　　　　　　▲50\n------------------------\n小計　　　　　　　　¥260\n消費税等 (8%)　　　　¥20\n合 計　￥1,８４０\nお預り　　　　　　　¥2,000\nお釣り　　　　　　　¥160\n\nJAN: 4901234567894",
+    "expected": {
+      "amounts": [150, 160, -50, 260, 20, 1840, 2000, 160],
+      "dates": ["2026-11-15"],
+      "times": ["17:30:00"],
+      "phones": ["0312345678"],
+      "registration_numbers": ["T7123456789012"],
+      "jan_codes": ["4901234567894"]
+    }
+  },
+  {
+    "id": "receipt_wareki_and_variants_02",
+    "description": "Wareki date, simplified characters (计/圆/总/额), zero-width characters, fullwidth digits",
+    "ocr_text": "テスト商事\n令和6年02月29日 12;45\nお問合せ: 090 1234 5678\n\n商品A　　　　　1,000圆\n商品B　　　　　2,000圓\n小计　　　　　 3,000円\n总额　　　　　 3,300円\n\nコード: 49123456",
+    "expected": {
+      "amounts": [1000, 2000, 3000, 3300],
+      "dates": ["2024-02-29"],
+      "times": ["12:45:00"],
+      "phones": ["09012345678"],
+      "jan_codes": ["49123456"]
+    }
+  },
+  {
+    "id": "invoice_corporate_03",
+    "description": "Corporate invoice with registration number, tax breakdown, and bank account",
+    "ocr_text": "請求書\n株式会社サンプル\n登録番号: T7100000000000\n請求日: 2026/04/01\nTEL: (06) 6123-4567\n\nご請求金額: ￥1,100,000-\n(税抜金額: ￥1,000,000)\n(消費税額: ￥100,000)",
+    "expected": {
+      "registration_numbers": ["T7100000000000"],
+      "dates": ["2026-04-01"],
+      "phones": ["0661234567"],
+      "amounts": [1100000, 1000000, 100000]
+    }
+  }
+]
